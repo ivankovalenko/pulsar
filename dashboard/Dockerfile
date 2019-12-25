@@ -22,7 +22,7 @@ FROM python:3.7-stretch
 MAINTAINER Pulsar
 
 RUN apt-get update
-RUN apt-get -y install postgresql python sudo nginx supervisor
+RUN apt-get -y install postgresql-9.6 python sudo nginx supervisor
 
 # Postgres configuration
 COPY conf/postgresql.conf /etc/postgresql/9.6/main/
